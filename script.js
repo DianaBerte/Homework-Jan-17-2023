@@ -14,9 +14,7 @@ const getImages = (query) => {
 
 getImages("dogs")
 
-
-
-// const svg = document.querySelectorAll("bd-placeholder-img");
+const svg = document.getElementsByClassName("bd-placeholder-img")[0];
 // const newH2 = document.createElement("h2");
 
 // function deleteImages () {
@@ -37,11 +35,12 @@ getImages("dogs")
     
 // }
 
-// const img = document.createElement("img");
+const img = document.createElement("img");
 // const cardNode = document.getElementsByClassName("card")[1];
 // cardNode.appendChild("img")
 
-// svg.replaceWith(img)
+
+svg.replaceWith(img)
 
 // svg.remove()
 
