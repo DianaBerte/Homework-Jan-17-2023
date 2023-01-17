@@ -9,10 +9,16 @@ const getImages = (query) => {
     fetch(`https://api.pexels.com/v1/search?query= ${query}`, options)
 
 .then((response) => response.json())
-.then((data) => {console.log(data)})
+.then((data) => {
+    console.log(data);
+    
+})
+.catch((err) => console.log(err))
 }
 
 getImages("dogs")
+
+
 
 const svg = document.getElementsByClassName("bd-placeholder-img")[0];
 // const newH2 = document.createElement("h2");
